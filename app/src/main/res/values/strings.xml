@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyHomework</string>
+    <string name="textView1">Я №1!</string>
+    <string name="textView2">А я №2</string>
+</resources>
