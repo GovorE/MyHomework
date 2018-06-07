@@ -29,16 +29,6 @@ public class dz1 extends AppCompatActivity implements View.OnClickListener{
             }
         });
 
-        text1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                click();
-
-
-            }
-        });
-
-
         text2.setOnClickListener(this);
 
 
