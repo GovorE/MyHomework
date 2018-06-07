@@ -6,12 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class dz1 extends AppCompatActivity{
- private    TextView text1;
- private    TextView text2;
- private    Button button1;
- private CharSequence exchange ;
- private Drawable color ;
+public class dz1 extends AppCompatActivity implements View.OnClickListener{
+    private    TextView text1;
+    private    TextView text2;
+    private    Button button1;
+    private CharSequence exchange ;
+    private Drawable color ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,29 +39,29 @@ public class dz1 extends AppCompatActivity{
         });
 
 
-        text2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-        click();
-
-            }
-        });
+        text2.setOnClickListener(this);
 
 
     }
 
+    public void clickText1(View view){
+        click();
+    }
 
+    @Override
+    public void onClick(View view) {
+        click();
+    }
 
-     private void click(){
+    private void click(){
 
-         exchange = text1.getText();
-         text1.setText(text2.getText());
-         text2.setText(exchange);
-         color= text1.getBackground();
-         text1.setBackground(text2.getBackground());
-         text2.setBackground(color);
+        exchange = text1.getText();
+        text1.setText(text2.getText());
+        text2.setText(exchange);
+        color= text1.getBackground();
+        text1.setBackground(text2.getBackground());
+        text2.setBackground(color);
 
-     }
+    }
 
 }
