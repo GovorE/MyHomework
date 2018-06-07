@@ -1,5 +1,4 @@
 package com.by.evgeny07.govore.myhomework;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,20 +19,22 @@ public class dz1 extends AppCompatActivity{
         text1=(TextView)findViewById(R.id.textView);
         text2=(TextView)findViewById(R.id.textView2);
         button1=(Button)findViewById(R.id.button);
-        final dz1 dz = new dz1();
+
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                click();
 
-                dz.buttonClick();
             }
         });
 
         text1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                click();
 
-                dz.buttonClick();
+
             }
         });
 
@@ -42,7 +43,8 @@ public class dz1 extends AppCompatActivity{
             @Override
             public void onClick(View view) {
 
-                dz.buttonClick();
+        click();
+
             }
         });
 
@@ -51,13 +53,15 @@ public class dz1 extends AppCompatActivity{
 
 
 
-     private void buttonClick(){
+     private void click(){
+
          exchange = text1.getText();
          text1.setText(text2.getText());
          text2.setText(exchange);
          color= text1.getBackground();
          text1.setBackground(text2.getBackground());
          text2.setBackground(color);
+
      }
 
 }
