@@ -2,4 +2,6 @@
     <string name="app_name">MyHomework</string>
     <string name="textView1">Я №1!</string>
     <string name="textView2">А я №2</string>
+    <dimen name="indentButton">10sp</dimen>
+    <dimen name="textSize">20sp</dimen>
 </resources>

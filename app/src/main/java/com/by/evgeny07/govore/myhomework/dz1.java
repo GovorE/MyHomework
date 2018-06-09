@@ -10,12 +10,12 @@ public class dz1 extends AppCompatActivity implements View.OnClickListener{
     private    TextView text1;
     private    TextView text2;
     private    Button button1;
-    private CharSequence exchange ;
-    private Drawable color ;
+    private CharSequence exchange;
+    private Drawable color;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dz1_activity);
+        setContentView(R.layout.activity_dz1);
         text1=(TextView)findViewById(R.id.textView);
         text2=(TextView)findViewById(R.id.textView2);
         button1=(Button)findViewById(R.id.button);
@@ -24,6 +24,7 @@ public class dz1 extends AppCompatActivity implements View.OnClickListener{
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 click();
 
             }
