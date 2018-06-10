@@ -41,7 +41,7 @@ public class Menu extends Activity {
     }
 
     public void activityDZ1(){
-        intent= new Intent(Menu.this,dz1.class);
+        intent= new Intent(Menu.this,Dz1.class);
         startActivity(intent);
     }
 

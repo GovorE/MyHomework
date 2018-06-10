@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class dz1 extends AppCompatActivity implements View.OnClickListener{
+public class Dz1 extends AppCompatActivity implements View.OnClickListener{
     private    TextView text1;
     private    TextView text2;
     private    Button button1;

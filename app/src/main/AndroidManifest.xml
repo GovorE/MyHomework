@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-       <activity android:name=".dz1">
+       <activity android:name=".Dz1">
        </activity>
 
         <activity android:name=".Dz2">
