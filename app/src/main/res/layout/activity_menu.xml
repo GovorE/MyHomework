@@ -51,6 +51,86 @@
                 android:text="fourth homework"
                 android:textColor="@color/colorButtonText"
                 android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="fifth homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="sixth homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="seventh homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="eighth homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="ninth homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="eleventh homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="twelfth homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indentButton"
+                android:background="@color/colorButton"
+                android:text="thirteenth homework"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/textSize" />
         </LinearLayout>
     </ScrollView>
 
