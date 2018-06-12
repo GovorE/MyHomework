@@ -24,7 +24,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="#040202"
+                android:background="#d01313"
                 android:orientation="vertical"
                 android:weightSum="300">
 
@@ -42,19 +42,14 @@
                     android:background="#f7f6f6"
                     android:orientation="vertical" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="100"
-                    android:background="#d01313"
-                    android:orientation="vertical" />
+
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="#0e0404"
+                android:background="#d0133c"
                 android:orientation="vertical"
                 android:weightSum="300">
 
@@ -67,19 +62,12 @@
                     android:background="#f7f6f6"
                     android:orientation="vertical" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="150"
-                    android:background="#d0133c"
-                    android:orientation="vertical" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="#040202"
+                android:background="#d01313"
                 android:orientation="horizontal"
                 android:weightSum="300">
 
@@ -97,12 +85,7 @@
                     android:background="#f7f6f6"
                     android:orientation="horizontal" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="100"
-                    android:background="#d01313"
-                    android:orientation="horizontal" />
+
 
             </LinearLayout>
 
@@ -111,7 +94,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="#040202"
+                android:background="#d01313"
                 android:orientation="vertical"
                 android:weightSum="200">
 
@@ -129,12 +112,6 @@
                     android:background="#261ab0"
                     android:orientation="vertical" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="50"
-                    android:background="#d01313"
-                    android:orientation="vertical" />
 
             </LinearLayout>
 
@@ -142,7 +119,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="#040202"
+                android:background="#0b931d"
                 android:orientation="vertical"
                 android:weightSum="200">
 
@@ -153,12 +130,7 @@
                     android:background="#d4130c"
                     android:orientation="vertical" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="100"
-                    android:background="#0b931d"
-                    android:orientation="vertical" />
+
 
             </LinearLayout>
 
@@ -166,7 +138,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="#040202"
+                android:background="#d4160c"
                 android:orientation="vertical"
                 android:weightSum="300">
 
@@ -198,12 +170,7 @@
                     android:background="#efeff1"
                     android:orientation="vertical" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="50"
-                    android:background="#d4160c"
-                    android:orientation="vertical" />
+
 
             </LinearLayout>
 
@@ -274,8 +241,6 @@
                         android:orientation="horizontal" />
                 </LinearLayout>
             </FrameLayout>
-
-
 
 
         </LinearLayout>
