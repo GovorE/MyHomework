@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<Button
+    android:id="@+id/button"
+    android:text="@string/dz3TextButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorButton"
+    android:textColor="@color/colorButtonText"
+    android:layout_marginTop="@dimen/indentButton"
+    android:textSize="@dimen/textSize"/>
+
+    <TextView
+        android:id="@+id/buildText"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorButtonText"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/imageApple"
+        android:textColor="@color/colorButtonText"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"/>
+
+</LinearLayout>

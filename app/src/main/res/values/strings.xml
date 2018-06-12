@@ -2,6 +2,8 @@
     <string name="app_name">MyHomework</string>
     <string name="textView1">Я №1!</string>
     <string name="textView2">А я №2</string>
+    <string name="dz3TextButton">Загрузить картинку</string>
+    <string name="imageApple">http://printonic.ru/uploads/images/2016/03/26/img_56f6e538401c0.jpg</string>
     <dimen name="indentButton">10sp</dimen>
     <dimen name="textSize">20sp</dimen>
 </resources>
