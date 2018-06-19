@@ -26,6 +26,8 @@ public class Dz3 extends Activity {
         button=(Button)findViewById(R.id.button);
         image=(ImageView)findViewById(R.id.imageView);
 
+        
+
 
 
         buildText.setText( BuildConfig.BANK_NAME);
