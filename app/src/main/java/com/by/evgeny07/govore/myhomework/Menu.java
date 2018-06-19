@@ -20,6 +20,15 @@ public class Menu extends Activity {
         button_dz1=(Button)findViewById(R.id.button1);
         button_dz2=(Button)findViewById(R.id.button2);
         button_dz3=(Button)findViewById(R.id.button3);
+        button_dz4=(Button)findViewById(R.id.button4);
+
+
+        button_dz4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                activityDZ4();
+            }
+        });
 
         button_dz3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +37,15 @@ public class Menu extends Activity {
             }
         });
 
+
+
+        button_dz2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                activityDZ2();
+            }
+        });
 
         button_dz1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,13 +56,7 @@ public class Menu extends Activity {
             }
         });
 
-        button_dz2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                activityDZ2();
-               }
-        });
 
 
     }
@@ -61,6 +73,11 @@ public class Menu extends Activity {
 
     public void activityDZ3(){
         intent= new Intent(Menu.this,Dz3.class);
+        startActivity(intent);
+    }
+
+    public void activityDZ4(){
+        intent= new Intent(Menu.this,Dz4.class);
         startActivity(intent);
     }
 }
