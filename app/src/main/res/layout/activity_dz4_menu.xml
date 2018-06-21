@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/watch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indentButton"
+            android:background="@color/colorButton"
+            android:text="watch"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:id="@+id/owl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indentButton"
+            android:background="@color/colorButton"
+            android:text="owl"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/textSize"/>
+
+        <Button
+            android:id="@+id/diagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indentButton"
+            android:background="@color/colorButton"
+            android:text="diagram"
+            android:textColor="@color/colorButtonText"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

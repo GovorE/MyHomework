@@ -30,7 +30,16 @@
         <activity android:name=".Dz3">
         </activity>
 
-        <activity android:name=".Dz4">
+        <activity android:name=".Dz4_menu">
+        </activity>
+
+        <activity android:name=".StartWatch">
+        </activity>
+
+        <activity android:name=".StartDiagram">
+        </activity>
+
+        <activity android:name=".Owl">
         </activity>
 
         <receiver android:name=".MyBroadcastResiver" >

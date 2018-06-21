@@ -9,21 +9,17 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
-import android.text.format.Time;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.ImageView;
-
-import com.squareup.picasso.Picasso;
 
 import java.util.Calendar;
 
-public class MyViewDz4 extends View implements Runnable {
+public class Watch extends View  {
     int minute,hour;
     Calendar calendar;
     Paint colorBelt;
-    Paint colorMetal;
-    Paint colorCircle;
+    Paint gray;
+    Paint white;
     Paint colorBackground;
     RectF rectBolt;
     RectF rectBelt;
@@ -31,25 +27,25 @@ public class MyViewDz4 extends View implements Runnable {
 
     float radius;
 
-    public MyViewDz4(Context context) {
+    public Watch(Context context) {
         super(context);
         init();
     }
 
-    public MyViewDz4(Context context, @Nullable AttributeSet attrs) {
+    public Watch(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
 
     }
 
-    public MyViewDz4(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public Watch(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
 
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public MyViewDz4(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public Watch(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();
 
@@ -77,6 +73,8 @@ public class MyViewDz4 extends View implements Runnable {
 
     protected void init() {
 
+
+
         calendar= Calendar.getInstance();
         hour = calendar.get(Calendar.HOUR);
         minute = calendar.get(Calendar.MINUTE);
@@ -89,13 +87,13 @@ public class MyViewDz4 extends View implements Runnable {
         colorBelt.setARGB(255, 112, 70, 8);
         colorBelt.setAntiAlias(true);
 
-        colorCircle = new Paint();
-        colorCircle.setColor(Color.WHITE);
+        white = new Paint();
+        white.setColor(Color.WHITE);
 
 
-        colorMetal = new Paint();
-        colorMetal.setColor(Color.GRAY);
-        colorMetal.setAntiAlias(true);
+        gray = new Paint();
+        gray.setColor(Color.GRAY);
+        gray.setAntiAlias(true);
 
         colorBackground = new Paint();
         colorBackground.setColor(Color.BLACK);
@@ -108,41 +106,68 @@ public class MyViewDz4 extends View implements Runnable {
         super.onDraw(canvas);
 
 
+        square(canvas);
+        circle(canvas);
+        text(canvas);
 
+        canvas.save();
+
+        stick(canvas);
+
+        canvas.restore();
+
+        arrow(canvas);
+
+
+
+
+
+
+
+    }
+
+    private void square(Canvas canvas){
         canvas.drawRect(rectBackground, colorBackground);
-        canvas.drawRect(rectBolt, colorMetal);
+        canvas.drawRect(rectBolt, gray);
         canvas.drawRect(rectBelt, colorBelt);
-        canvas.drawCircle(getWidth() / 2, getHeight() / 2, radius, colorCircle);
-        canvas.drawCircle(getWidth() / 2, getHeight() / 2, radius * 0.9f, colorMetal);
 
-        colorCircle.setTextSize((int) 30 * Resources.getSystem().getDisplayMetrics().density);
-        colorCircle.setTextAlign(Paint.Align.CENTER);
-        colorCircle.setStrokeWidth((int) 5 * Resources.getSystem().getDisplayMetrics().density);
+    }
 
-        canvas.drawText("12", getWidth() / 2, getHeight() / 2 - radius * 0.7f, colorCircle);
-        canvas.drawText("6", getWidth() / 2, getHeight() / 2 + radius * 0.78f, colorCircle);
-        canvas.drawText("9", getWidth() / 2 - radius * 0.7f, getHeight() / 2, colorCircle);
-        canvas.drawText("3", getWidth() / 2 + radius * 0.7f, getHeight() / 2, colorCircle);
-            canvas.save();
+    private void circle(Canvas canvas){
+        canvas.drawCircle(getWidth() / 2, getHeight() / 2, radius, white);
+        canvas.drawCircle(getWidth() / 2, getHeight() / 2, radius * 0.9f, gray);
+    }
+
+    private  void text(Canvas canvas) {
+        white.setTextSize((int) 30 * Resources.getSystem().getDisplayMetrics().density);
+        white.setTextAlign(Paint.Align.CENTER);
+        white.setStrokeWidth((int) 5 * Resources.getSystem().getDisplayMetrics().density);
+
+        canvas.drawText("12", getWidth() / 2, getHeight() / 2 - radius * 0.7f, white);
+        canvas.drawText("6", getWidth() / 2, getHeight() / 2 + radius * 0.78f, white);
+        canvas.drawText("9", getWidth() / 2 - radius * 0.7f, getHeight() / 2, white);
+        canvas.drawText("3", getWidth() / 2 + radius * 0.7f, getHeight() / 2, white);
+    }
+
+    private void stick(Canvas canvas){
         for (float i = 0; i < 360; i = i + 30) {
 
 
             canvas.drawLine(getWidth()/2, getHeight()/2-radius * 0.9f,
                     getWidth() / 2, getHeight() / 2-radius * 0.8f,
-                    colorCircle);
+                    white);
 
             canvas.rotate(30, getWidth() / 2, getHeight() / 2);
 
 
         }
-        canvas.restore();
-
-
+    }
+    private  void arrow(Canvas canvas){
         canvas.rotate((hour+3)*30, getWidth() / 2, getHeight() / 2);
 
         canvas.drawLine(getWidth()/2, getHeight()/2,
                 getWidth() / 2, getHeight() / 2-radius * 0.4f,
-                colorCircle);
+                white);
         canvas.restore();
         canvas.rotate(minute*6, getWidth() / 2, getHeight() / 2);
 
@@ -150,17 +175,7 @@ public class MyViewDz4 extends View implements Runnable {
 
         canvas.drawLine(getWidth()/2, getHeight()/2,
                 getWidth() / 2, getHeight() / 2-radius * 0.65f,
-                colorCircle);
-
-
-
-
-    }
-
-
-    @Override
-    public void run() {
-
+                white);
     }
 }
 
