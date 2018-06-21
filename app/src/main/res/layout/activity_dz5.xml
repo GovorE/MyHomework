@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/wiFi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indentButton"
+        android:background="@color/colorButton"
+        android:text="Wi-Fi"
+        android:textColor="@color/colorButtonText"
+        android:textSize="@dimen/textSize" />
+
+    <ImageView
+        android:id="@+id/imageViewWiFi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"/>
+</android.support.constraint.ConstraintLayout>

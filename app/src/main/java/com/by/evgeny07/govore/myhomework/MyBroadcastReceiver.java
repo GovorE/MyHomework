@@ -5,9 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class MyBroadcastResiver extends BroadcastReceiver {
+public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+
         Log.e("Receiver","Chanhed");
     }
 }

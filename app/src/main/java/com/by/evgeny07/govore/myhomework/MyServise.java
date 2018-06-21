@@ -21,7 +21,7 @@ public class MyServise extends Service{
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.e("Creae","Start");
+        Log.e("Create","Start");
         return super.onStartCommand(intent, flags, startId);
 
 
@@ -30,7 +30,7 @@ public class MyServise extends Service{
 
     @Override
     public boolean onUnbind(Intent intent) {
-        Log.e("Creae","Unbing");
+        Log.e("Create","Unbind");
         return super.onUnbind(intent);
 
     }

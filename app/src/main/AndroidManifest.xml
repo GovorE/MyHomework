@@ -42,7 +42,10 @@
         <activity android:name=".Owl">
         </activity>
 
-        <receiver android:name=".MyBroadcastResiver" >
+        <activity android:name=".Dz5">
+        </activity>
+
+        <receiver android:name=".MyBroadcastReceiver" >
             <intent-filter>
                 <action android:name="android.net.com.CONNECTIVITY_CHANGE"/>
 
